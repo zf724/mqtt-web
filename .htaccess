@@ -1,0 +1,15 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+order deny,allow
+<Files ~ "^(.htaccess|manage.sql|README.md)$">
+deny from all
+</Files>
+
+DirectoryIndex index.html       
+Redirect temp /index.html /server/users.php
+
+ErrorDocument 403 /server/404.php
+ErrorDocument 404 /server/404.php
+ErrorDocument 503 /server/404.php
+
