@@ -52,7 +52,7 @@ else
 			{
 				$row  = mysqli_fetch_row($result);
 				$username = stripslashes($row[0]);
-				$password = stripslashes($row[1]);
+				$password = "打死我也不说";//stripslashes($row[1]);
 				$email =  stripslashes($row[2]);
                 $status=  stripslashes($row[3]);
 				$remark= stripslashes($row[4]);

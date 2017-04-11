@@ -46,7 +46,7 @@ else
         $port = stripslashes($row[1]);
         $client =  stripslashes($row[2]);
         $user=  stripslashes($row[3]);
-        $password= stripslashes($row[4]);
+        $password= "打死我也不说";//stripslashes($row[4]);
     }
     else $error = "无默认主机信息！";
 
