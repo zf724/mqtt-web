@@ -73,6 +73,7 @@ if ($loggedin)
             </p>-->
              <ul class="nav">
             <li><a href='users.php'>用户管理</a></li>
+            <li><a href='messages.php'>消息管理</a></li>
             <li><a href='firmwares.php'>固件管理</a></li>
             <li class='active'><a href='devices.php'>设备管理</a></li>
             <li><a href='reports.php'>统计管理</a></li>

@@ -22,7 +22,9 @@ echo <<<END
       .sidebar-nav {
         padding: 9px 0;
       }
-	  
+      #remark{
+	    width:auto;
+      } 
 	  .error{
 	  color: Red;
 	  font-size: 16px;
@@ -35,11 +37,10 @@ echo <<<END
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	
+
 <script>
   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 </script>
-		
   </head>
 
   <body>
@@ -72,8 +73,8 @@ if ($loggedin)
               欢迎您， <a href="#" class="navbar-link">管理员</a>
             </p>-->
              <ul class="nav">
-            <li class='active'><a href='users.php'>用户管理</a></li>
-            <li><a href='messages.php'>消息管理</a></li>
+            <li><a href='users.php'>用户管理</a></li>
+            <li class='active'><a href='messages.php'>消息管理</a></li>
             <li><a href='firmwares.php'>固件管理</a></li>
             <li><a href='devices.php'>设备管理</a></li>
             <li><a href='reports.php'>统计管理</a></li>

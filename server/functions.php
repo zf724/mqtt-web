@@ -10,8 +10,8 @@ if($_SERVER["SERVER_NAME"] == "bracelet.oqsmart.com.cn"){
             <img src='http://www.hostinger.com.hk/banners/cn/hostinger-80x15-powered-1.gif' alt='虚拟主机' align='right' border='0' width='80' height='15' />
         </a>";
 } else{
-    $dbhost  = '127.0.0.1';
-    $dbname  = 'bracelet';
+    $dbhost  = 'mysql';
+    $dbname  = 'mqtt';
     $dbuser  = 'root';
     $dbpass  = 'root';
     $dbfile = '../firmware/manage.sql';
