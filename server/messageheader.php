@@ -76,7 +76,7 @@ if ($loggedin)
             <li><a href='users.php'>用户管理</a></li>
             <li class='active'><a href='messages.php'>消息管理</a></li>
             <li><a href='firmwares.php'>固件管理</a></li>
-            <li><a href='devices.php'>设备管理</a></li>
+            <li><a href='devices.php'>主机状态</a></li>
             <li><a href='reports.php'>统计管理</a></li>
             </ul>
              <div class="pull-right">

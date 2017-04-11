@@ -8,7 +8,7 @@ echo <<<END
         <div class="span2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="active"><a href="devicelist.php">用户列表</a></li>
+              <li class="active">主机列表</li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -19,7 +19,7 @@ END;
 echo <<<END
 
 		<div class="well">
-		<h3>设备管理正在建设中……</h3>
+		<h3>主机状态正在建设中……</h3>
 		</div>
 
 END;
