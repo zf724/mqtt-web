@@ -6,8 +6,7 @@ order deny,allow
 deny from all
 </Files>
 
-DirectoryIndex index.html       
-Redirect temp /index.html /server/users.php
+DirectoryIndex /server/index.php
 
 ErrorDocument 403 /server/404.php
 ErrorDocument 404 /server/404.php
