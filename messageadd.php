@@ -99,6 +99,7 @@ $(document).ready(function(){
     var clientId = "$client";
     var user = "$user";
     var password = "$password";
+    var cleanSession = false;
     
     destination = $("#topic").val();
 
@@ -112,6 +113,7 @@ $(document).ready(function(){
     client.connect({
         userName:user, 
         password:password, 
+        cleanSession:cleanSession,
         onSuccess:onConnect, 
         onFailure:onFailure
     }); 
@@ -140,6 +142,8 @@ $(document).ready(function(){
       if (text && destination) {
         message = new Messaging.Message(text);
         message.destinationName = destination;
+        message.qos = 2;
+        message.retained = true;
         client.send(message);
         sentPost("messageadd.php", {topic:destination, content:text});
       }else{
