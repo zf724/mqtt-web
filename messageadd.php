@@ -92,7 +92,7 @@ $(document).ready(function(){
     ");
   } else {
     
-    var client, destination;
+    var client;
 
     var host = "$host";    
     var port = "$port";
@@ -100,8 +100,6 @@ $(document).ready(function(){
     var user = "$user";
     var password = "$password";
     var cleanSession = false;
-    
-    destination = $("#topic").val();
 
     client = new Messaging.Client(host, Number(port), clientId);
     
@@ -122,7 +120,6 @@ $(document).ready(function(){
     // the client is notified when it is connected to the server.
     function onConnect(frame) {
       debug("connected to MQTT");
-      client.subscribe(destination);
     };  
 
     // this allows to display debug logs directly on the web page
@@ -139,7 +136,9 @@ $(document).ready(function(){
     
     $('#send-message').submit(function() {
       var text = $('#content').val();
+      var destination = $("#topic").val();
       if (text && destination) {
+        client.subscribe(destination);
         message = new Messaging.Message(text);
         message.destinationName = destination;
         message.qos = 2;
